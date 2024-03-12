@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        class produto{
+            constructor(nome,preço,quantidade){
+                this.nome = nome;
+                this.preço = preço;
+                this.quantidade = quantidade;
+            }
+            calculartotal(){
+                return(this.preço*this.quantidade).toFixed(2)
+            }
+        }
+        let produto1 = new produto("Bolacha",8.00,5)
+
+        console.log(produto1)
+        console.log(`O total é: ${produto1.calculartotal()}`)
+    </script>
+</body>
+</html>
