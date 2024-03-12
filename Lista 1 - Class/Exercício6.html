@@ -18,7 +18,7 @@
                 return(this.receitaanual-this.despesasanuais).toFixed(2)
             }
             exibirreatorio(){
-                console.log("Nome da Empresa: "+this.nome+", Receita Anual: "+this.receitaanual+", Despesas Anuais: "+this.despesasanuais+", Despesas Anuais: "+(`${empresa1.calcularlucroanual()}`))
+                console.log("Nome da Empresa: "+this.nome+", Receita Anual: "+this.receitaanual+", Despesas Anuais: "+this.despesasanuais+", Despesas Anuais: "+(`${this.calcularlucroanual()}`))
             }
         }
         let empresa1 = new empresa("Juninho Ar-condicionado´s",50000,30000)
